@@ -1,3 +1,5 @@
+START TRANSACTION;
+
 INSERT INTO comuni_temp(nome,cod_provi,cod_regio,pref,cap,cod_fis,num_abi) VALUES('Abano Terme ','PD','VEN','49','35031','A001','19726');
 INSERT INTO comuni_temp(nome,cod_provi,cod_regio,pref,cap,cod_fis,num_abi) VALUES('Abbadia Cerreto','LO','LOM','371','26834','A004','293');
 INSERT INTO comuni_temp(nome,cod_provi,cod_regio,pref,cap,cod_fis,num_abi) VALUES('Abbadia Lariana','LC','LOM','341','23821','A005','3305');
@@ -8090,3 +8092,5 @@ INSERT INTO comuni_temp(nome,cod_provi,cod_regio,pref,cap,cod_fis,num_abi) VALUE
 INSERT INTO comuni_temp(nome,cod_provi,cod_regio,pref,cap,cod_fis,num_abi) VALUES('Zumpano','CS','CAL','984','87040','M202','2413');
 INSERT INTO comuni_temp(nome,cod_provi,cod_regio,pref,cap,cod_fis,num_abi) VALUES('Zungoli','AV','CAM','825','83030','M203','1232');
 INSERT INTO comuni_temp(nome,cod_provi,cod_regio,pref,cap,cod_fis,num_abi) VALUES('Zungri','VV','CAL','963','89867','M204','2055');
+
+COMMIT;
