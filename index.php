@@ -1,36 +1,27 @@
-
 <?php
-    try{
-        $conn = mysqli_connect("localhost", "sun", "sun53", "");
-    }
-    catch(mysqli_sql_exception $e){ exit("Database connection error"); }
+    try{ $conn = mysqli_connect("localhost", "root", "", "sun_gecria"); }
+    catch(mysqli_sqli_exception $e){ exit("Connection error" ); }
 
-    function carica($conn, $sql){
-        $lista = [];
-        $res = mysqli_query($conn, $sql),
-        while($row = mysqli_fatch_assoc($res)){
-            $lista[] = $row;
-        }
-        return $lista;
-    }
-
-    try{
-        $regioni = carica($conn, "SELECT ")
+    function get_regioni($conn){
+        $sql = "SELECT "
     }
 ?>
 
+<!DOCTYPE html>
 <html>
     <head>
-        <title>sun_gecria</title>
-        <h2>sun_gecria</h2>
+        <title>Gecria</title>
+        <h2>Gecria</h2>
     </head>
     <body>
-        <form action="">
-            select regione
+        <form action="" method="post">
+            regione
             <select name="cod_regio">
-                <option value="">--select--</option>
-                
+                <option value="">-- scegli --</option>
+                <?php
+                    
+                ?>
             </select>
         </form>
     </body>
-</html>
+<html>
